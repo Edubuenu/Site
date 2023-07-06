@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Seu Portfólio</title>
+        <link rel="stylesheet" href="css/styles.css"> 
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Portfólio</h1>
+                </div>
+                <div class="button-responsive">
+                    <div></div>
+                </div>
+                <ul class="links">
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#projetos">PROJETOS</a></li>
+                    <li><a href="#sites">SITES</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav><!--/MENU-->
+        </header>
+        
+        <main>
+            <section id="inicio">
+                <h2>Bem-vindo ao meu portfólio</h2>
+                <p>Que ainda está em desenvolvimento</p>
+            </section>
+            
+            <section id="projetos">
+                <h2>Meus Projetos</h2>
+                <div class="project">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="project">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </section>
+            
+            <section id="sites">
+                <h2>Meus Sites</h2>
+                <div class="site">
+                    <h3>Site 1</h3>
+                    <p>Descrição do site 1.</p>
+                </div>
+                <div class="site">
+                    <h3>Site 2</h3>
+                    <p>Descrição do site 2.</p>
+                </div>
+                <!-- Adicione mais sites conforme necessário -->
+ 
+            <section id="contato">
+                <h2>Entre em Contato</h2>
+                <p>Entre em contato comigo pelos seguintes meios:</p>
+                <ul>
+                    <li>
+                        <button type="button" onclick="openEmailClient()">edb199999@gmail.com</button>
+
+                        <script>
+                        function openEmailClient() {
+                        window.location.href = "mailto:seuemail@example.com";
+                        }
+                        </script>
+
+                    </li>
+                    <li>
+                        <button type="button" onclick="openWhatsApp()">
+                            <img  class="button-icon" src="img/whatspp.png" alt="Ícone WhatsApp">
+                            WhatsApp
+                        
+                        </button>
+                            
+                            <script>
+                            function openWhatsApp() {
+                            var phoneNumber = "5512936180365";
+                            window.location.href = "https://wa.me/" + phoneNumber;
+                            }
+                            </script>
+
+                    </li>
+                    <li>
+                        <button type="button" onclick="window.location.href='https://www.linkedin.com/in/eduardo-dias-bueno-227401143/'">LinkedIn</button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="window.location.href='https://github.com/Edubuenu'">GitHub</button>
+                    </li>
+                    <!-- Adicione outros botões conforme necessário -->
+                </ul>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Eedduuaarrddoo</p>
+        </footer>
+    </body>
+</html>
