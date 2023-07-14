@@ -1,4 +1,190 @@
+/*determina o tamanho dos botões clicaveis*/
+
 .button-icon {
-  width: 5px;
-  height: 51px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+/*Determina o tamanho das imagens*/
+
+.button-icon-img {
+    width: 40px;
+    height: 25px;
+}
+
+.button {
+    display: inline-flex;
+    /* Exibe o botão como um elemento flexível em linha */
+    align-items: center;
+    /* Alinha verticalmente o conteúdo do botão */
+    justify-content: center;
+    /* Alinha horizontalmente o conteúdo do botão */
+    padding: 10px 20px;
+    /* Define o espaçamento interno do botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão */
+    border: none;
+    /* Remove a borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda do botão */
+    background-color: #e0e0e0;
+    /* Define a cor de fundo do botão */
+    color: #333;
+    /* Define a cor do texto do botão */
+    text-decoration: none;
+    /* Remove a decoração de link do botão */
+    cursor: pointer;
+    /* Define o cursor do mouse como um indicador de interação */
+    transition: background-colors 0.3s ease;
+    /* Adiciona uma transição suave à cor de fundo do botão */
+}
+
+.button:hover {
+    background-color: #6e62da;
+    /* Define a cor de fundo quando o botão está com o hover */
+}
+
+.button:focus {
+    outline: none;
+    /* Remove a borda de foco do botão */
+    box-shadow: 0 0 0 2px #4c41ab;
+    /* Adiciona uma sombra ao redor do botão quando está em foco */
+}
+
+.button-text {
+    display: block;
+    /* Define o texto do botão como um elemento de bloco */
+}
+
+
+/* lado a lado em vez de em uma lista vertical*/
+
+ul.links {
+    list-style-type: none;
+    padding: 70;
+    margin: 70;
+    /*centralizado*/
+    text-align: center;
+}
+
+ul.links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/*remove o espaçamento direito para o último item da lista*/
+
+ul.links li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    /* Ajuste a altura desejada */
+    background-image: url(/assets/css/img/333580.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: height 0.3s, background-color 0.3s;
+    z-index: 2;
+}
+
+.page-header.small {
+    height: 50px;
+    /* Ajuste a altura desejada quando o cabeçalho estiver pequeno */
+    background-image: url(/assets/css/img/333580.jpg);
+    /* Defina uma imagem de fundo para o cabeçalho pequeno, no caso está a mesma da header */
+}
+
+
+/* Ajuste o tamanho da fonte do título */
+
+.page-title {
+    font-size: 100px;
+    transition: font-size 0.3s;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.page-title.small {
+    font-size: 25px;
+    /* Ajuste o tamanho da fonte do título quando o cabeçalho estiver pequeno */
+    color: white;
+}
+
+.portfolio {
+    position: center;
+    width: 100%;
+    height: 350px;
+    /* Ajuste a altura desejada para o contêiner do portfólio */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.content {
+    margin-top: 450px;
+    /* Ajuste a margem superior conforme necessário */
+    padding: 2rem;
+    /* Ajuste o espaçamento interno conforme necessário */
+}
+
+.margin {
+    margin-top: 200px;
+    /* Ajuste a margem superior conforme necessário */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.project,
+.site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 5px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.project:hover,
+.site:hover {
+    background-color: #6e62da;
+}
+
+.project h3,
+.site h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p,
+.site p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.project img {
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: cover;
 }

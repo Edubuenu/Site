@@ -1,49 +1,71 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
 /* Definir fonte base */
+
 html {
     font-size: 16px;
 }
 
+
 /*Definir uma altura máxima para a página inteira */
+
 body {
     min-height: 100vh;
 }
 
+
 /* Remover decoração de link padrão */
+
 a {
     text-decoration: none;
 }
 
+
 /* Definir estilos de imagem responsivos */
+
 img {
     max-width: 100%;
     height: auto;
 }
 
+
 /* Limpar estilos de listas */
-ul, ol {
+
+ul,
+ol {
     list-style: none;
 }
 
+
 /* Estilos de cabeçalhos */
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
     margin: 1rem 0;
 }
 
+
 /* Estilos de conteúdo principal */
+
 .main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+
 /* Estilos da barra de navegação */
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -52,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
     background-color: #f5f5f5;
 }
-
 
 .logo h1 {
     font-size: 1.5rem;
@@ -73,14 +94,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+
 /* Estilos de seções */
+
 section {
     padding: 2rem;
     background-color: #fff;
     margin-bottom: 2rem;
 }
 
+
 /* Estilos de rodapé */
+
 footer {
     padding: 1rem;
     background-color: #f5f5f5;
@@ -89,9 +114,10 @@ footer {
 }
 
 
-
 /*Flex containers*/
-.main, .navbar{
+
+.main,
+.navbar {
     display: flex;
     flex-direction: column;
-}   
+}
