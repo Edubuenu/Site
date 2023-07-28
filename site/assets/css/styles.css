@@ -188,3 +188,38 @@ ul.links li:not(:last-child) {
     max-height: 100px;
     object-fit: cover;
 }
+
+.knowledge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .knowledge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #e0e0e0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 145px;
+    height: 150px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+  }
+
+  .knowledge-card:hover {
+    background-color: #6e62da;
+}
+
+  .knowledge-card img {
+    width: 100px;
+    height: 100px;
+    
+  }
+  
